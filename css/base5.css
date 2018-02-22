@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*   
+Theme Name:   Base 2016 (basic) 
+Theme URI:    http://dondempsey.com/base2016
+Description:  A basic collection for CSS for web development. Based on HTML 5 Boilerplate. https://html5boilerplate.com/
+Author:       Don Dempsey
+Author URI:   http://dondempsey.com/base2016
+Version:      0.3
+*/
+
+
+
+/* ------- [ Basic Styles ] -------- */
+
+body {
+	color: #2F2F2F;
+	font-family: 'Libre Baskerville', serif;
+	font-style: normal;
+	font-weight: 100;
+	line-height: 1.6em;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+}
+
+/* ------- [ Typography ] ------- */
+
+p { font-size: 1em; margin: 0 0 20px 0;}
+h2, h3, h4, h5, h6 { font-style: normal; margin: 0 0 0 0; color: #2F2F2F; }
+
+p{
+  'Libre Baskerville', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+	font-weight: 100;
+	font-size: 3.250em;
+	line-height: 1.1;
+}
+h2 {
+	font-weight: 100;
+	/*font-size: 2.625em;*/
+  font-size: 2.500em;
+	line-height: 1.1;
+}
+h3 {
+	font-weight: 100;
+	font-size: 1.500em;
+	line-height: 1.1;
+}
+h4 {
+	
+	font-weight: 900;
+	font-size: 1em;
+	line-height: 1.1;
+	text-transform: uppercase;
+  letter-spacing: .05em;
+}
+h5 {
+	'
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 1.1;
+}
+h6 {
+	
+	font-weight: 900;
+	font-size: 1em;
+	line-height: 1.1;
+}
+
+
+/* -------- [ Site Links ] -------- */
+a:link {
+	color: #000000;
+	text-decoration: underline;
+	outline: 0;
+}
+a:visited {
+	color: #000000;
+	text-decoration: none;
+	outline: 0;
+}
+a:hover {
+	color: #56627A;
+	text-decoration: underline;
+}
+a:active {
+	color: #56627A;
+}
+.more {
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+.more a:link {
+	text-decoration: none;
+}
+.more a:hover {
+	text-decoration: none;
+}
+
+/* ------- [ Simple Grid ] ------- */
+
+/* 2 Columns */
+.columns_2 {
+  width: 450px;
+  float: left;
+  margin-right: 10px;
+}
+.columns_2:last-of-type {
+  margin-right: 0;
+}
+
+/* 3 Columns */
+.columns_3 {
+  width: 300px;
+  float: left;
+  margin-right: 20px;  
+}
+.columns_3:last-of-type {
+  margin-right: 0;
+}
+
+/* 4 Columns */
+.columns_4 {
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+}
+.columns_4:last-of-type {
+  margin-right: 0;
+}
+
+/* 5 Columns */
+.columns_5 {
+  width: 172px;
+  float: left;
+  margin-right: 20px;
+}
+.columns_5:last-of-type {
+  margin-right: 0;
+}
+
+/* 6 Columns */
+.columns_6 {
+  width: 140px;
+  float: left;
+  margin-right: 20px;
+}
+.columns_6:last-of-type {
+  margin-right: 0;
+}
+
+
+/* ------- [ Misc HTML ] -------  */
+
+.clearfix {
+	clear: both;
+  display: block;
+}
+.clearfix:after, .container:after {
+  clear: both;
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.remove-bottom { 
+	margin-bottom: 0; 
+}
+.half-bottom { 
+	margin-bottom: 10px;
+}
+.add-bottom {
+	margin-bottom: 20px;
+}
+.credit {
+	font-size: 0.9em;
+	font-style: italic;
+	color: #888;
+	text-align: left;
+}
+.align-right {
+	float: right;
+	margin: 0 0 0 10px;
+  padding: 0;
+}
+.align-center {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.align-left {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
+
+pre {
+    background: none repeat scroll 0 0 #f7f7f7;
+    color: #222;
+    line-height: 18px;
+    margin-bottom: 18px;
+    padding: 1.5em;
+}
+ins {
+    background: none repeat scroll 0 0 #ffc;
+    text-decoration: none;
+}
+abbr[title], acronym {
+    cursor: help;
+}
+
+dl {
+    margin: 0 0 24px;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-bottom: 18px;
+}
+
+hr {
+  border: 0 none;
+  height: 1px;
+  background: currentColor;
+  clear: both;
+  display: block;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+
+figcaption {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* ------- [ Lists ]  -------  */
+
+ul {
+    list-style: square outside none;
+    margin: 0 0 0 0;
+  
+}
+ol {
+    list-style: decimal outside none;
+    margin: 0 0 18px 0;
+}
+ul ul {
+   list-style: circle outside none;
+   margin: none;
+}
+ol ol {
+    list-style: upper-alpha outside none;
+}
+ol ol ol {
+    list-style: lower-roman outside none;
+}
+ol ol ol ol {
+    list-style: lower-alpha outside none;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-bottom: 0;
+}
+
+
+/* ------- [ Table ] ------- */
+
+table { 
+	border: 1px solid #777;
+	text-align: left;
+	width: 100%;
+}		
+caption {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+th, td { 
+	font-size: .8em;
+	padding: .65em;
+}
+thead, th  {
+	background: #666666;
+	color: #fff; 
+	border: 1px solid #000;
+}
+tr:nth-child(odd) { 
+	background: #ccc;
+}
+tr:hover {
+	background: #aaa;
+} 
+td {
+	border-right: 1px solid #777;
+}
+
+
+
+/* ------- [ User Added CSS ] ------- */
+
+.container {
+  display: block;
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+  overflow: hidden;
+  clear: both;
+  overflow: visible;
+}
+
+.highlight {
+  color: #ffda96;
+}
+
+
+/* ------- [ Print ] ------- */
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: 'Georgia', Times New Roman, serif; color: #2F2F2F; background: none; font-size: 12pt; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; padding: 0 130px; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */
